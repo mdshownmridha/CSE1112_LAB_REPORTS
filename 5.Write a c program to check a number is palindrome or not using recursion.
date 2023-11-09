@@ -1,0 +1,34 @@
+Problem No : 05
+Problem Name : Write a c program to check a number is palindrome or not using recursion.
+Sample Input/Output : 
+                            Input  	          Output
+                          1225221	is a Palindrome Number.
+                          4445464	is not a Palindrome Number.
+
+Coding : 
+#include<stdio.h>
+int Num_reverse(int n)
+{
+    static int rem,rev=0;
+    if(n!=0)
+    {
+        rem=n%10;
+        rev=rev*10+rem;
+        Num_reverse(n/10);
+    }
+    return rev;
+}
+int main()
+{
+    int num;
+    printf("Enter your number :");
+    scanf("%d",&num);
+    if(Num_reverse(num)==num)
+        printf("%d is a Palindrome Number.",num);
+    else
+        printf("%d is not a Palindrome Number.",num);
+
+}
+Result and Discussion : From  the case analysis and the coding  the output and input is same .So , I can say that my code is all right. 
+
+
