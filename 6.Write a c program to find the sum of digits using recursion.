@@ -1,0 +1,28 @@
+Problem No : 06
+Problem Name : Write a c program to find the sum of digits using recursion.
+Sample Input/Output : 
+                              Input	                           Output
+                              1234	             Sum of digits of 1234 = 10
+                               678	              Sum of digits of 678 = 21
+
+Coding : 
+#include <stdio.h>
+int sumOfDigits(int num);
+int main()
+{
+    int num, sum;
+    printf("Enter any number to find sum of digits: ");
+    scanf("%d", &num);
+    sum = sumOfDigits(num);
+    printf("Sum of digits of %d = %d", num, sum);
+    return 0;
+}
+int sumOfDigits(int num)
+{
+    if(num == 0)
+        return 0;
+    return ((num % 10) + sumOfDigits(num / 10));
+}
+Result and Discussion : From  the case analysis and the coding  the output and input is same .So , I can say that my code is all right. 
+
+
