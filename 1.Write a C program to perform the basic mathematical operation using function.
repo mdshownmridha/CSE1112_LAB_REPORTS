@@ -1,0 +1,31 @@
+Problem No:01
+Problem Name:Write a C program to perform the basic mathematical operation using function.
+Coding: #include<stdio.h>
+int main()
+{
+    int a, b, c, d, e, f;
+    printf("Enter two numbers:");
+    scanf("%d%d", &a, &b);
+    c=a+b;
+    d=a-b;
+    e=a/b;
+    f=a*b;
+
+    printf("summation of a and b is :%d\n",c);
+    printf("substraction of a and b is :%d\n",d);
+    printf("divition of a and b is :%d\n",e);
+    printf("multiply of a and b is :%d\n",f);
+    return 0;
+
+}
+Sample input/output: Enter two numbers:12
+6
+summation of a and b is :18
+substraction of a and b is :6
+divition of a and b is :2
+multiply of a and b is :72
+
+Process returned 0 (0x0)   execution time : 11.108 s
+Press any key to continue.
+Result and Discussion: From  the case analysis and the coding  the output and input is same .So , I can say that my code is all right. 
+
