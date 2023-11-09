@@ -1,0 +1,29 @@
+Problem No : 03
+Problem Name : Write a c program to check a number is palindrome or not.
+Sample Input/Output :  Enter a number : 45954
+ is a palindrome number
+Process returned 0 (0x0)   execution time : 2.958 s
+Press any key to continue.
+Coding : 
+#include<stdio.h>
+int main()
+{
+    int n, c, s=0, r;
+    printf("Enter a number : ");
+    scanf("%d",&n);
+    c=n;
+    while (n>0)
+    {
+        r=n%10;
+        s=r+(s*10);
+        n=n/10;
+    }
+    if (c==s)
+       printf(" is a palindrome number ");
+    else
+       printf(" is not a palindrome number ");
+    return 0;
+}
+Result and Discussion : From  the case analysis and the coding  the output and input is same .So , I can say that my code is all right. 
+
+
