@@ -1,5 +1,5 @@
 Problem No : 07
-Problem Name : Write a c program to generate the nth Fibopnacci term using recursion.
+Problem Name : Write a c program to generate the nth Fibonacci term using recursion.
 Sample Input/Output : 
                               Input	                           Output
                                         6	             The 6 number in fibonacci series is 8
