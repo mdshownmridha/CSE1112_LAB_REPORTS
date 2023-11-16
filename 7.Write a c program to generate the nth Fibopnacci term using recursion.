@@ -1,0 +1,45 @@
+Problem No : 07
+Problem Name : Write a c program to generate the nth Fibopnacci term using recursion.
+Sample Input/Output : 
+                              Input	                           Output
+                                        6	             The 6 number in fibonacci series is 8
+                                        2	             The 2 number in fibonacci series is 1
+
+Coding : 
+#include<stdio.h>
+int fibo(int num)
+{
+    if (num == 0)
+    {
+        return 0;
+    }
+    else if (num == 1)
+    {
+        return 1;
+    }
+    else
+    {
+        return(fibo(num - 1) + fibo(num - 2));
+    }
+}
+int main()
+{
+    int num;
+    int result;
+
+    printf("Enter the nth number in fibonacci series: ");
+    scanf("%d", &num);
+    if (num < 0)
+    {
+        printf("Fibonacci of negative number is not possible.\n");
+    }
+    else
+    {
+        result = fibo(num);
+        printf("The %d number in fibonacci series is %d\n", num, result);
+    }
+    return 0;
+}
+
+Result and Discussion : From  the case analysis and the coding  the output and input is same .So , I can say that my code is all right. 
+
