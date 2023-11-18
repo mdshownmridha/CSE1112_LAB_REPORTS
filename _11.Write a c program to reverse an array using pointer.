@@ -1,0 +1,58 @@
+Problem No : 11
+Problem Name : Write a c program to reverse an array using pointer.
+Sample Input/Output : 
+                              Input	                            Output
+Enter the size of the array: 5
+Enter the elements of the array: 3 8 9 -9 1	Original Array: 3 8 9 -9 1
+Reversed Array: 1 -9 9 8 3
+Enter the size of the array: 3
+Enter the elements of the array: -7 9 -2	Original Array: -7 9 -2
+Reversed Array: -2 9 -7
+
+Coding : 
+#include <stdio.h>
+
+void reverseArray(int *arr, int size) {
+    int *start = arr;
+    int *end = arr + size - 1;
+
+    while (start < end) {
+        int temp = *start;
+        *start = *end;
+        *end = temp;
+
+        start++;
+        end--;
+    }
+}
+
+int main() {
+    int size;
+
+    printf("Enter the size of the array: ");
+    scanf("%d", &size);
+
+    int arr[size];
+
+    printf("Enter the elements of the array:\n");
+    for (int i = 0; i < size; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    printf("\nOriginal Array: ");
+    for (int i = 0; i < size; i++) {
+        printf("%d ", arr[i]);
+    }
+
+    reverseArray(arr, size);
+
+    printf("\nReversed Array: ");
+    for (int i = 0; i < size; i++) {
+        printf("%d ", arr[i]);
+    }
+
+    return 0;
+}
+Result and Discussion : From  the case analysis and the coding  the output and input is same .So , I can say that my code is all right. 
+
+
