@@ -1,0 +1,34 @@
+#include<stdio.h>
+#define A_GRADE 90
+#define B_GRADE 80
+#define C_GRADE 70
+#define D_GRADE 60
+char calculate_grade (int score)
+{
+    if(score>=A_GRADE)
+        return 'A';
+    else if(score>=B_GRADE)
+        return 'B';
+    else if(score>=C_GRADE)
+        return 'C';
+    else if(score>=D_GRADE)
+        return 'D';
+    else
+        return 'F';
+    }
+int main ()
+{
+    int score;
+    printf("Enter score :");
+    scanf("%d",&score);
+    if(score>=0 && score<=100)
+    {
+        char grade=calculate_grade(score);
+        printf("Grade is : %c\n",grade);
+    }
+    else
+    {
+        printf("Please enter a valid score between 0 and 100.\n");
+    }
+    return 0;
+}
